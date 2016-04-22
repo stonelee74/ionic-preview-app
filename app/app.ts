@@ -18,6 +18,7 @@ import * as badges from './pages/badges/badges';
 import * as buttons from './pages/buttons/buttons';
 import * as cards from './pages/cards/cards';
 import * as checkboxes from './pages/checkboxes/checkboxes';
+import * as events from './pages/events/events';
 import * as grid from './pages/grid/grid';
 import * as icons from './pages/icons/icons';
 import * as inputs from './pages/inputs/inputs';
@@ -33,6 +34,7 @@ import * as segments from './pages/segments/segments';
 import * as selects from './pages/selects/selects';
 import * as slides from './pages/slides/slides';
 import * as tabs from './pages/tabs/tabs';
+import * as toast from './pages/toast/toast';
 import * as toggles from './pages/toggles/toggles';
 import * as toolbar from './pages/toolbar/toolbar';
 
@@ -68,6 +70,8 @@ const ROUTES = [
   { path: '/cards/list', component: cards.ListPage },
 
   { path: '/checkboxes/basic', component: checkboxes.BasicPage },
+
+  { path: '/events/basic', component: events.BasicPage },
 
   { path: '/grid/basic', component: grid.BasicPage },
 
@@ -117,6 +121,8 @@ const ROUTES = [
   { path: '/tabs/icon', component: tabs.IconPage },
   { path: '/tabs/icon-text', component: tabs.IconTextPage },
 
+  { path: '/toast/basic', component: toast.BasicPage },
+
   { path: '/toggles/basic', component: toggles.BasicPage },
 
   { path: '/toolbar/basic', component: toolbar.BasicPage },
@@ -133,7 +139,11 @@ const ROUTES = [
       android: {
         activator: 'ripple',
         backButtonIcon: 'md-arrow-back'
+      },
+      ios: {
+        statusbarPadding: true
       }
+
     }
   },
   pipes: [DisplayRoutePipe]

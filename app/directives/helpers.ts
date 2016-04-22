@@ -7,6 +7,7 @@ import * as badges from '../pages/badges/badges';
 import * as buttons from '../pages/buttons/buttons';
 import * as cards from '../pages/cards/cards';
 import * as checkboxes from '../pages/checkboxes/checkboxes';
+import * as events from '../pages/events/events';
 import * as grid from '../pages/grid/grid';
 import * as icons from '../pages/icons/icons';
 import * as inputs from '../pages/inputs/inputs';
@@ -22,6 +23,7 @@ import * as segments from '../pages/segments/segments';
 import * as selects from '../pages/selects/selects';
 import * as slides from '../pages/slides/slides';
 import * as tabs from '../pages/tabs/tabs';
+import * as toast from '../pages/toast/toast';
 import * as toggles from '../pages/toggles/toggles';
 import * as toolbar from '../pages/toolbar/toolbar';
 
@@ -92,6 +94,7 @@ export function getPages() {
     'card-advanced-social': cards.AdvancedSocialPage,
     'card-advanced-weather': cards.AdvancedWeatherPage,
     'checkbox': checkboxes.BasicPage,
+    'events': events.BasicPage,
     'radio': radios.BasicPage,
     'range': ranges.BasicPage,
     'segment': segments.BasicPage,
@@ -127,6 +130,7 @@ export function getPages() {
     'tabs-icon': tabs.IconPage,
     'tabs-icon-text': tabs.IconTextPage,
     'tabs-badges': tabs.BadgesPage,
+    'toast': toast.BasicPage,
     'toolbar': toolbar.BasicPage,
     'toolbar-buttons': toolbar.ButtonsPage,
     'toolbar-segment': toolbar.SegmentPage,
